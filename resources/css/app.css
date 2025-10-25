@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 🔹 Font */
+html {
+    font-family: "Montserrat Alternates", sans-serif;
+    @apply font-semibold  scrollbar-hide;
+    
+}
+
+/* 🔹 Card Styling */
+.card {
+    @apply bg-white shadow-lg border border-gray-200 rounded-lg;
+}
+
+.page-wrapper {
+    @apply container w-full max-w-6xl p-6 mx-auto  ;
+}
+
+/* Styling untuk table */
+.table-wrapper {
+    @apply bg-white shadow-md rounded-lg p-4;
+}
+
+.table {
+    @apply w-full border-collapse overflow-hidden rounded-lg;
+}
+
+/* Bagian Header (thead) */
+.table thead {
+    @apply bg-gray-200 text-gray-900 font-semibold;
+}
+
+/* Membulatkan sudut atas untuk header */
+.table thead tr:first-child th:first-child {
+    @apply rounded-tl-lg;
+}
+
+.table thead tr:first-child th:last-child {
+    @apply rounded-tr-lg;
+}
+
+/* Bagian Body (tbody) */
+.table tbody {
+    @apply text-gray-700;
+}
+
+/* Baris selang-seling */
+.table tbody tr:nth-child(odd) {
+    @apply bg-gray-100;
+}
+
+.table tbody tr:nth-child(even) {
+    @apply bg-white;
+}
+
+/* Hover effect */
+.table tbody tr:hover {
+    @apply bg-gray-50;
+}
+
+
+/* Membulatkan sudut bawah untuk baris terakhir */
+.table tbody tr:last-child td:first-child {
+    @apply rounded-bl-lg;
+}
+
+.table tbody tr:last-child td:last-child {
+    @apply rounded-br-lg;
+}
+
+.card-divider {
+    @apply divide-y-2  text-slate-300;
+}
+
+
+
+/* Tombol edit */
+.edit-btn {
+    @apply bg-yellow-500 hover:bg-yellow-600 text-white p-2 rounded flex items-center justify-center;
+}
+
+.edit-icon {
+    @apply text-lg font-semibold;
+}
+
+
+
+/* 🔹 Input Field */
+.input-group {
+    @apply flex items-center space-x-2 border-4 border-gray-500 p-2 rounded-lg bg-white transition focus-within:ring-2 focus-within:ring-yellow-500 focus-within:border-yellow-500;
+}
+
+/* 🔹 Icon dalam Input */
+.input-icon {
+    @apply h-5 w-5 text-gray-500;
+}
+
+/* 🔹 Input Field */
+.input-field {
+    @apply w-full focus:outline-none bg-white text-black;
+}
+
+/* 🔹 Efek Border Merah Jika Input Kosong Saat Submit */
+.peer:invalid {
+    @apply border-red-500 ring-2 ring-red-500;
+}
+
+/* 🔹 Efek untuk menampilkan pesan error */
+.peer:invalid ~ .input-error {
+    @apply block text-red-500 text-sm font-semibold mt-1;
+}
+
+/* 🔹 Livewire Error Handling */
+.input-error {
+    @apply text-red-500 text-sm font-semibold mt-1 hidden;
+}
+.has-error {
+    @apply border-red-500 ring-2 ring-red-500;
+}
+
+/* Error border yang cerah */
+.input-error-border {
+    border-color: #ff4d4f; /* merah cerah */
+    border-width: 2px;
+    box-shadow: 0 0 0 2px rgba(255, 77, 79, 0.2); /* sedikit efek glow */
+}
+
+/* Pesan error kecil di bawah input */
+.input-error-text {
+    color: #ff4d4f;
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 600;
+    margin-top: 0.25rem;
+}
+
+
+
+/* Styling Modal */
+.modal-box {
+    background-color: white !important; /* Modal berwarna putih */
+    border-radius: 10px; /* Membuat sudut melengkung */
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Memberikan efek shadow */
+}
+
+/* Styling Modal Overlay */
+.modal {
+    background-color: rgba(0, 0, 0, 0.5); /* Background transparan gelap */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Styling Tombol Close */
+.btn-close {
+    background-color: #FFD700 !important; /* Warna kuning */
+    color: black !important; /* Warna teks hitam */
+    font-weight: bold;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn-close:hover {
+    background-color: #FFC107 !important; /* Warna kuning lebih gelap saat hover */
+}
+
+
+
+/* Kontainer lingkaran */
+.icon-circle {
+    position: relative;
+    width: 4rem; /* 16px * 4 = 64px */
+    height: 4rem;
+    background-color: #ffc107; /* Warna kuning (DaisyUI bg-warning) */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ikon di dalam lingkaran */
+.icon-circle i {
+    position: absolute;
+    font-size: 3rem; /* Ukuran ikon */
+    color: black; /* Warna ikon */
+}
+
+/* Posisi ikon bisa diubah sesuai kebutuhan */
+.icon-pos-center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon-pos-top-left {
+    top: 20%;
+    left: 20%;
+    transform: translate(-20%, -20%);
+}
+
+.icon-pos-top-right {
+    top: 20%;
+    right: 20%;
+    transform: translate(20%, -20%);
+}
+
+.icon-pos-bottom-left {
+    bottom: 20%;
+    left: 20%;
+    transform: translate(-20%, 20%);
+}
+
+.icon-pos-bottom-right {
+    bottom: 20%;
+    right: 20%;
+    transform: translate(20%, 20%);
+}
+
+
+
+
+
+
+
+
+
