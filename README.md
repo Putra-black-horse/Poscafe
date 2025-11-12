@@ -105,18 +105,30 @@ npm run build
 
 ## 🚀 Deploy ke Production
 
-### Deploy ke Render.com (GRATIS)
+### Deploy ke InfinityFree (GRATIS - Recommended)
 
-Aplikasi ini sudah siap untuk di-deploy ke Render.com dengan database PostgreSQL gratis.
+Aplikasi ini sudah siap untuk di-deploy ke InfinityFree dengan database MySQL gratis.
 
-📖 **[Baca Panduan Lengkap Deploy ke Render](DEPLOY_RENDER.md)**
+📖 **[Baca Panduan Lengkap Deploy ke InfinityFree](DEPLOY_INFINITYFREE.md)**
 
 Fitur:
-- ✅ 100% Gratis (tanpa kartu kredit)
+- ✅ **100% Gratis** (tanpa kartu kredit)
+- ✅ **MySQL Database** included (400MB)
+- ✅ **PHP 8.x** support
+- ✅ **cPanel** untuk management
+- ✅ **Free SSL** (HTTPS otomatis)
+- ✅ **5GB Storage** & Unlimited bandwidth
+
+### Deploy ke Render.com (Perlu Kartu Kredit)
+
+Alternatif deploy ke Render.com dengan database PostgreSQL.
+
+📖 **[Baca Panduan Deploy ke Render](DEPLOY_RENDER.md)**
+
+Fitur:
 - ✅ Database PostgreSQL included
 - ✅ Auto-deploy dari GitHub
-- ✅ HTTPS otomatis
-- ✅ Custom domain support
+- ⚠️ Perlu kartu kredit untuk verifikasi (tidak dicharge)
 
 ## Kontribusi
 
