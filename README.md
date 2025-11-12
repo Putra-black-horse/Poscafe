@@ -103,6 +103,21 @@ http://127.0.0.1:8000
 npm run build
 ```
 
+## 🚀 Deploy ke Production
+
+### Deploy ke Render.com (GRATIS)
+
+Aplikasi ini sudah siap untuk di-deploy ke Render.com dengan database PostgreSQL gratis.
+
+📖 **[Baca Panduan Lengkap Deploy ke Render](DEPLOY_RENDER.md)**
+
+Fitur:
+- ✅ 100% Gratis (tanpa kartu kredit)
+- ✅ Database PostgreSQL included
+- ✅ Auto-deploy dari GitHub
+- ✅ HTTPS otomatis
+- ✅ Custom domain support
+
 ## Kontribusi
 
 Kontribusi selalu diterima! Silakan buat pull request atau laporkan issue.
